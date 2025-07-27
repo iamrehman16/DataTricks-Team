@@ -6,8 +6,15 @@
 html {
   scroll-behavior: smooth;
 }
+.floating {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
 

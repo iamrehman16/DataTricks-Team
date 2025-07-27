@@ -41,7 +41,7 @@ const HeroSection = () => {
         {/* Social Media Icons */}
         <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mt: 2 }}>
           <IconButton
-            href="https://github.com/yourprofile"
+            href="https://github.com/DataTricks-stack"
             target="_blank"
             sx={{ color: "white", "&:hover": { color: "#000" } }}
           >
@@ -57,7 +57,7 @@ const HeroSection = () => {
           </IconButton>
 
           <IconButton
-            href="mailto:yourmail@example.com"
+            href="mailto:datatricks.team@gmail.com" target="_blank"
             sx={{ color: "white", "&:hover": { color: "#D44638" } }} // Gmail Red Hover
           >
             <EmailIcon fontSize="large" />

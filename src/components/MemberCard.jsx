@@ -1,9 +1,24 @@
 import { Box, Typography, Avatar } from "@mui/material";
+import CodeIcon from "@mui/icons-material/Code";
+import PsychologyIcon from "@mui/icons-material/Psychology";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import StorageIcon from "@mui/icons-material/Storage";
+
+// ✅ Helper function to pick the correct icon dynamically
+const getRoleIcon = (role) => {
+  const lower = role.toLowerCase();
+  if (lower.includes("full stack")) return <CodeIcon sx={{ fontSize: 28, color: "#fff" }} />;
+  if (lower.includes("ui/ux")) return <PsychologyIcon sx={{ fontSize: 28, color: "#fff" }} />;
+  if (lower.includes("game")) return <SportsEsportsIcon sx={{ fontSize: 28, color: "#fff" }} />;
+  if (lower.includes("data")) return <StorageIcon sx={{ fontSize: 28, color: "#fff" }} />;
+  return <CodeIcon sx={{ fontSize: 28, color: "#fff" }} />; // default fallback
+};
 
 const MemberCard = ({ image, name, role, expertise }) => {
   return (
     <Box
       sx={{
+        position: "relative",
         width: 250,
         p: 3,
         borderRadius: 3,
@@ -17,7 +32,26 @@ const MemberCard = ({ image, name, role, expertise }) => {
         }
       }}
     >
-      {/* Profile Picture */}
+      {/* 🔹 Corner Badge */}
+      <Box
+        sx={{
+          position: "absolute",
+          top: 10,
+          right: 10,
+          background: "#1976d2",
+          borderRadius: "50%",
+          width: 40,
+          height: 40,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          boxShadow: "0 3px 6px rgba(0,0,0,0.2)"
+        }}
+      >
+        {getRoleIcon(role)}
+      </Box>
+
+      {/* 🔹 Profile Picture */}
       <Avatar
         src={image}
         alt={name}
@@ -30,17 +64,17 @@ const MemberCard = ({ image, name, role, expertise }) => {
         }}
       />
 
-      {/* Name */}
+      {/* 🔹 Name */}
       <Typography variant="h6" fontWeight="bold">
         {name}
       </Typography>
 
-      {/* Role */}
+      {/* 🔹 Role */}
       <Typography variant="subtitle2" sx={{ opacity: 0.7, mb: 1 }}>
         {role}
       </Typography>
 
-      {/* Expertise */}
+      {/* 🔹 Expertise */}
       <Typography variant="body2" sx={{ opacity: 0.85 }}>
         {expertise}
       </Typography>

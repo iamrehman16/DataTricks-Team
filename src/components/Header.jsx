@@ -32,8 +32,8 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [open, setOpen] = useState(false);        // Drawer state
-  const [popupOpen, setPopupOpen] = useState(false); // Popup state
+  const [open, setOpen] = useState(false);        
+  const [popupOpen, setPopupOpen] = useState(false); 
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -50,13 +50,16 @@ const Header = () => {
     <>
       <AppBar position="static" color="primary" sx={{ boxShadow: 3 }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          {/* Logo */}
-          <Typography
-            variant="h6"
-            sx={{ fontFamily: "Orbitron, sans-serif", fontWeight: "bold", letterSpacing: 1, cursor: "pointer" }}
-          >
-            DataTricks
-          </Typography>
+          {/* Logo & Title */}
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1, cursor: "pointer" }}>
+            <img src="/icons/logo.jpg" alt="DataTricks Logo" style={{ width: 40, height: 40, borderRadius: "50%" }} />
+            <Typography
+              variant="h6"
+              sx={{ fontFamily: "Orbitron, sans-serif", fontWeight: "bold", letterSpacing: 1 }}
+            >
+              DataTricks
+            </Typography>
+          </Box>
 
           {/* Desktop Navigation */}
           {!isMobile && (

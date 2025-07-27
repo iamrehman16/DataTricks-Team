@@ -26,7 +26,17 @@ const HomePage = () => {
     <Box id="home" sx={{ flexGrow: 1 }}>
       
       {/* Hero Section */}
-      <HeroSection/>
+      <Box data-aos='fade-up' sx={{ position: "relative", height: "100vh" }}>
+        <img src="./public/icons/node.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
+        <img src="./public/icons/unreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
+        <img src="./public/icons/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
+        <img src="./public/icons/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
+        <img src="./public/icons/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
+        <img src="./public/icons/express.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
+        <HeroSection />
+      </Box>
+
+      
      
       {/* motive section */}
       <AboutUsSection/>

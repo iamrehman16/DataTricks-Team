@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Container, Typography, Link, IconButton } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PolicyDialog from './PolicyDialog';   // ✅ Import the dialog
@@ -68,8 +68,8 @@ We use cookies to improve user experience:
           <Box>
             <Typography variant="subtitle1" gutterBottom>Follow Us</Typography>
             <Box>
-              <IconButton href="#" color="inherit"><FacebookIcon /></IconButton>
-              <IconButton href="#" color="inherit"><TwitterIcon /></IconButton>
+              <IconButton href="https://github.com/DataTricks-stack" color="inherit"><GitHubIcon /></IconButton>
+              <IconButton href="https://www.instagram.com/datatricks.team?utm_source=qr&igsh=eWdlYnZibmRzNWFh" color="inherit"><InstagramIcon /></IconButton>
               <IconButton href="https://www.linkedin.com/company/datatricks/" color="inherit"><LinkedInIcon /></IconButton>
             </Box>
           </Box>
