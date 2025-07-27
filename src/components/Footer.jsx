@@ -61,7 +61,7 @@ We use cookies to improve user experience:
             <Typography variant="subtitle1" gutterBottom>Contact Info</Typography>
             <Box display="flex" alignItems="center" gap={1} mb={1}><LocationOnIcon fontSize="small" /> <Typography variant="body2">Islamabad, Pakistan</Typography></Box>
             <Box display="flex" alignItems="center" gap={1} mb={1}><PhoneIcon fontSize="small" /> <Typography variant="body2">+92 3347033613</Typography></Box>
-            <Box display="flex" alignItems="center" gap={1}><EmailIcon fontSize="small" /> <Typography variant="body2">contact@datatricks.com</Typography></Box>
+            <Box display="flex" alignItems="center" gap={1}><EmailIcon fontSize="small" /> <Typography variant="body2">contact@datatricks.team@gmail.com</Typography></Box>
           </Box>
 
           {/* Social Media */}
