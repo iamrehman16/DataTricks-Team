@@ -1,8 +1,8 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 import { Box, Container, Typography, Button, Grid, Card, CardContent, Divider } from '@mui/material';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import TechnologyStack from '../components/TechnologyStackSection';
 import OurProjects from '../components/ProjectsSection';
@@ -27,12 +27,12 @@ const HomePage = () => {
       
       {/* Hero Section */}
       <Box data-aos='fade-up' sx={{ position: "relative", height: "100vh" }}>
-        <img src="./public/icons/node.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
-        <img src="./public/icons/unreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
-        <img src="./public/icons/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
-        <img src="./public/icons/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
-        <img src="./public/icons/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
-        <img src="./public/icons/express.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
+        <img src="./public/inode.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
+        <img src="./public/iunreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
+        <img src="./public/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
+        <img src="./public/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
+        <img src="./public/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
+        <img src="./public/iexpress.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
         <HeroSection />
       </Box>
 
