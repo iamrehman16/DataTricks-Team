@@ -27,12 +27,12 @@ const HomePage = () => {
       
       {/* Hero Section */}
       <Box data-aos='fade-up' sx={{ position: "relative", height: "100vh" }}>
-        <img src="./public/inode.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
-        <img src="./public/iunreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
-        <img src="./public/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
-        <img src="./public/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
-        <img src="./public/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
-        <img src="./public/iexpress.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
+        <img src="/inode.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
+        <img src="/iunreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
+        <img src="/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
+        <img src="/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
+        <img src="/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
+        <img src="/iexpress.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
         <HeroSection />
       </Box>
 
