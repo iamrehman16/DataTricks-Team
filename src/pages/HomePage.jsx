@@ -28,10 +28,10 @@ const HomePage = () => {
       {/* Hero Section */}
       <Box data-aos='fade-up' sx={{ position: "relative", height: "100vh" }}>
         <img src="/inode.png" className="floating" style={{ top: "20%", left: "10%", width: 60 }} />
-        <img src="/iunreal.png" className="floating" style={{ top: "60%", left: "8%", width: 60 }} />
+        <img src="/iunreal.png" className="floating" style={{ top: "68%", left: "12%", width: 60 }} />
         <img src="/cloud.png" className="floating" style={{ top: "40%", left: "18%", width: 80 }} />
         <img src="/idea.png" className="floating" style={{ top: "25%", left: "85%", width: 60 }} />
-        <img src="/code.png" className="floating" style={{ top: "70%", left: "88%", width: 60 }} />
+        <img src="/code.png" className="floating" style={{ top: "70%", left: "68%", width: 60 }} />
         <img src="/iexpress.png" className="floating" style={{ top: "50%", left: "80%", width: 60, animationDelay: "2s" }} />
         <HeroSection />
       </Box>
@@ -74,7 +74,30 @@ const HomePage = () => {
       <ContactUs/>
 
 
-     <Button sx={{padding:'16px 12px', bgcolor:'#eee', position:'fixed', bottom:'50px', right:'50px', borderRadius:'50%', cursor:'pointer',}} component='a' href='#' ><ArrowUpwardIcon color='primary' sx={{fontWeight:'bold'}}/></Button>
+      <Button
+        sx={{
+          padding: '14px',
+          backgroundColor: '#1976d2',
+          color: 'white',
+          position: 'fixed',
+          bottom: '40px',
+          right: '40px',
+          borderRadius: '50%',
+          minWidth: 'auto',
+          boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+          transition: 'all 0.3s ease',
+          '&:hover': {
+            backgroundColor: '#1565c0',
+            transform: 'scale(1.1)',
+            boxShadow: '0 6px 15px rgba(0,0,0,0.3)',
+          },
+          zIndex: 1000,
+        }}
+        component="a"
+        href="#"
+      >
+        <ArrowUpwardIcon sx={{ fontSize: 28, fontWeight: 'bold' }} />
+      </Button>
 
 
     </Box>
