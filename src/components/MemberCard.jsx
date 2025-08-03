@@ -3,6 +3,7 @@ import CodeIcon from "@mui/icons-material/Code";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import StorageIcon from "@mui/icons-material/Storage";
+import AndroidIcon from '@mui/icons-material/Android';
 
 // ✅ Helper function to pick the correct icon dynamically
 const getRoleIcon = (role) => {
@@ -11,6 +12,7 @@ const getRoleIcon = (role) => {
   if (lower.includes("ui/ux")) return <PsychologyIcon sx={{ fontSize: 28, color: "#fff" }} />;
   if (lower.includes("game")) return <SportsEsportsIcon sx={{ fontSize: 28, color: "#fff" }} />;
   if (lower.includes("data")) return <StorageIcon sx={{ fontSize: 28, color: "#fff" }} />;
+  if (lower.includes("android")) return <AndroidIcon sx={{ fontSize: 28, color: "#fff" }} />;
   return <CodeIcon sx={{ fontSize: 28, color: "#fff" }} />; // default fallback
 };
 

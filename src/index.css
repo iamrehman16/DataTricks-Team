@@ -1,3 +1,5 @@
+
+
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +12,53 @@ html {
   position: absolute;
   animation: float 6s ease-in-out infinite;
 }
+
+.team-slide {
+  opacity: 0.5;
+  transform: scale(0.85);
+  transition: all 0.5s ease;
+  padding: 10px;
+}
+
+/* Active center slide highlight */
+.slick-center .team-slide {
+  opacity: 1;
+  transform: scale(1.07);
+  filter: blur(0);
+}
+
+/* Blurred side slides */
+.slick-slide:not(.slick-center) {
+  filter: blur(1px);
+}
+
+/* Optional gradient fade at edges */
+.slick-list {
+  overflow: visible;
+  position: relative;
+}
+
+.slick-list::before,
+.slick-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.slick-list::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.slick-list::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
 
 @keyframes float {
   0% { transform: translateY(0); }
